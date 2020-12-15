@@ -2,7 +2,7 @@
 
 A simple python bot which tweets your recent matches (which have not been tweeted already) played on Twitter. Data collected using [OpenDota Web API](https://docs.opendota.com/#), data scraped using [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) and [requests](https://pypi.org/project/requests/) library and tweeted using [Tweepy API](http://docs.tweepy.org/en/latest/).
 
----
+[Twitter Bot Account](https://twitter.com/LoganBot5)
 
 ### Installation
 
