@@ -37,7 +37,10 @@ Enter your MMR in the terminal (Optional)(It is not tweeted but kept in log.dat 
 Enter the MMR: 2490
 ```
 
-Sample Tweets:
+---
+
+### Sample Tweets:
+
 [<img src="images/Tweet.png"/>](images/Tweet.png)
 
 ---
