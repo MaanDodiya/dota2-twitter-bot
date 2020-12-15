@@ -109,7 +109,7 @@ def getMatchDetails():
 
             tweets.append(tweetData)
     mmr = int(input("Enter the MMR: "))
-    # initLog(tweets[0]["match_id"], mmr)
+    initLog(tweets[0]["match_id"], mmr)
     return tweets
 
 
@@ -154,7 +154,7 @@ def compileTweet():
     IntroTweet += "Final Rank: " + getRank()
 
     for match in tweetData:
-        tweet = "Match " + str(count) + "(" + str(nGames) + ")\n"
+        tweet = "MATCH " + str(count) + "(" + str(nGames) + ")\n"
         tweet += "[" + str(match["time"].day) + "/" + \
             str(match["time"].month) + "/" + str(match["time"].year) + " "
         tweet += str(match["time"].hour//10) + \
@@ -163,15 +163,15 @@ def compileTweet():
             str(match["time"].minute % 10) + ":"
         tweet += str(match["time"].second//10) + \
             str(match["time"].second % 10) + "(+5:30 GMT)" + "]\n"
-        tweet += "Match ID: " + str(match["match_id"]) + "\n"
+        tweet += "MATCH ID: " + str(match["match_id"]) + "\n"
 
         if(match["result"] == match["my_side"]):
             status = "Won"
         else:
             status = "Lost"
 
-        tweet += "Hero: " + encoding[match["my_hero"]] + ", Status: " + status
-        tweet += ", Duration: " + str(match["duration"]//60) + ":" + str(
+        tweet += "HERO: " + encoding[match["my_hero"]] + ", STATUS: " + status
+        tweet += ", DURATION: " + str(match["duration"]//60) + ":" + str(
             (match["duration"] % 60)//10) + str((match["duration"] % 60) % 10) + "\n"
         rad = []
         dire = []
@@ -185,9 +185,9 @@ def compileTweet():
             i = dire.index(encoding[match["my_hero"]])
             dire[i] += " (Maan)"
 
-        tweet += "Radiant: " + rad[0] + ", " + rad[1] + \
+        tweet += "RADIANT: " + rad[0] + ", " + rad[1] + \
             ", " + rad[2] + ", " + rad[3] + ", " + rad[4] + "\n"
-        tweet += "Dire: " + dire[0] + ", " + dire[1] + \
+        tweet += "DIRE: " + dire[0] + ", " + dire[1] + \
             ", " + dire[2] + ", " + dire[3] + ", " + dire[4]
 
         tweets.append(tweet)
@@ -208,8 +208,9 @@ def findWinLoss(tweetData):
     return w, l
 
 
+encoding = getHeroNames()
+
 # initLog(5741090954, __MMR)
-# encoding = getHeroNames()
 # tweets = compileTweet()
 # for tweet in tweets:
 #     print(tweet)
