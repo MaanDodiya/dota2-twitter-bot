@@ -1,4 +1,4 @@
-# Dota2 Match Bot
+# Dota2 Twitter Bot
 
 A simple python bot which tweets your recent matches (which have not been tweeted already) played on Twitter. Data collected using [OpenDota Web API](https://docs.opendota.com/#), data scraped using [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) and [requests](https://pypi.org/project/requests/) library and tweeted using [Tweepy API](http://docs.tweepy.org/en/latest/).
 
