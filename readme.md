@@ -1,6 +1,8 @@
 # Dota2 Match Bot
 
-A simple python bot which tweets your recent matches (which have not been tweeted already) played on tweeter. Data collected using [OpenDota Web API](https://docs.opendota.com/#), data scraped using [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) and [requests](https://pypi.org/project/requests/) library and tweeted using [Tweepy API](http://docs.tweepy.org/en/latest/).
+A simple python bot which tweets your recent matches (which have not been tweeted already) played on Twitter. Data collected using [OpenDota Web API](https://docs.opendota.com/#), data scraped using [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) and [requests](https://pypi.org/project/requests/) library and tweeted using [Tweepy API](http://docs.tweepy.org/en/latest/).
+
+---
 
 ### Installation
 
@@ -27,10 +29,11 @@ auth.set_access_token("key", "secret")
 
 [Refer this Tweepy Documentation if not working](http://docs.tweepy.org/en/latest/auth_tutorial.html#oauth-1a-authentication)
 
-Run the python file in terminal
+Run the python file in terminal.
 Enter your MMR in the terminal (Optional)(It is not tweeted but kept in log.dat file for future reference)
 
-```>>> C:/Python39/python.exe twitter.py
+```
+>>> C:/Python39/python.exe twitter.py
 Enter the MMR: 2490
 ```
 
