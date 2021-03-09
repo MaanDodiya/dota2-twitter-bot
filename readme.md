@@ -41,7 +41,7 @@ Enter the MMR: 2490
 
 ### Sample Tweets:
 
-[<img src="images/Tweet.png"/>](images/Tweet.png)
+[<img src="images/Tweet v1.1.0.png"/>](images/Tweet.png)
 
 ---
 
